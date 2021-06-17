@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+     <header>
+         <div class="icons">&#11166;</div>
+         <div class="logo">
+             <h1>mgp mdp</h1>
+         </div>
+        <ul id="navbar">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">NOsotros</a></li>
+            <li class="desplegable-uno">
+                 <a href="#"> Servicios<span>&#11167</span></a>
+                 <div class="menu-uno">
+                     <ul>
+                         <li><h4>Mar del plata</h4></li>
+                         <li><img src="./muni.jpg" alt=""></li>
+                     </ul>
+                     <ul>
+                         <li><h4>Vecinos</h4></li>
+                         <li><a href="#">Barrios</a></li>
+                         <li><a href="#">Comedores</a></li>
+                         <li><a href="#">Escuelas</a></li>
+                         <li><a href="#">Otros</a></li>
+                     </ul>
+                     <ul>
+                        <li><h4>Salud</h4></li>
+                        <li><a href="#">Vacunas</a></li>
+                        <li><a href="#">Salitas</a></li>
+                        <li><a href="#">Covid</a></li>
+                        <li><a href="#">Cema</a></li>
+                     </ul>
+                     <ul>
+                        <li><h4>Obras</h4></li>
+                        <li><a href="#">Escuelas</a></li>
+                        <li><a href="#">Calles</a></li>
+                        <li><a href="#">Alumbrado</a></li>
+                        <li><a href="#">otro</a></li>
+                     </ul>
+                     <ul>
+                        <li><h4>otro</h4></li>
+                        <li><a href="#">otro</a></li>
+                        <li><a href="#">otro</a></li>
+                        <li><a href="#">otro</a></li>
+                        <li><a href="#">otro</a></li>
+                     </ul>
+                 </div>
+            </li> 
+
+            <li><a href="#">Turismo</a></li>
+            <li><a href="#">Tramites</a></li>
+            <li class="desplegable-dos">
+                 <a href="#">social<span>&#11167</span></a></a>
+                 <ul class="menu-dos">
+                     <li><a href="#">facebook</a></li>
+                     <li><a href="#">Youtube</a></li>
+                     <li><a href="#">Instagram</a></li>
+                     <li><a href="#">Linkedin</a></li>
+                 </ul>
+            </li>
+
+         </ul>
+
+
+     </header>
+        <script>
+            const icons = document.querySelector('.icons');
+            const navbar = document.querySelector('#navbar');
+            icons.addEventListener('click', ()=>{
+                navbar.classList.toggle('active');
+                icons.classList.toggle('rotate');
+            })
+        </script>  
+
+    
+</body>
+</html>
